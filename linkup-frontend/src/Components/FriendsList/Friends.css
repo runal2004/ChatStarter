@@ -1,0 +1,107 @@
+.left-half-outer{
+    width:400px;
+    height: 90%;
+    flex-direction: column;
+}
+.friends-list-upper{
+    width: 100%;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color :rgba(255, 255, 255, 0.7);
+    border-radius: 50px 50px 0px 0px;
+}
+.add-new-btn{
+    width:90%;
+    border: dotted;
+    border-radius: 40px;
+    height: 70px;
+    margin:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.friends-list-title{
+    align-self: flex-start;
+    margin:0px 0px 20px 20px;   
+    width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.friends-list-title h1{
+    margin:0px;
+}
+.search-bar{
+    border-radius: 50px;
+    background-color:rgba(255, 255, 255, 0.137) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search-bar input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    max-width: 70%;
+}
+.search-bar input:focus{
+    outline:none
+}
+.search-input-active{
+    box-shadow: 0 0 20px #ff00ff8c;
+}
+.friends-list-outer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 60vh;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.friends-list-outer:last-child{
+    border-radius: 0 0 40px 40px;
+}
+.friends-outer{
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid rgba(221, 221, 249, 0.116);
+    border-width:1px 0px;
+    color: white;
+    padding:5%;
+}
+.friends-outer:hover{
+    border: solid #c422cd 1px
+}
+.online{
+    height: 7px;
+    width: 7px;
+    margin:5px;
+    border-radius: 100%;
+    background-color: green;
+}
+.friends-outer.active{
+    background-color: #c422cdc0;
+    border-radius: 0 25px 25px 0;
+    border:none;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: relative;
+}
+@media screen and (max-width: 500px) {
+    .left-half-outer{
+        height: 100%;
+        width: 100%;
+    }
+    .friends-list-upper{
+        border-radius: 0px;
+    }
+    .friends-list-outer{
+        height: 100%;
+    }
+    .friends-list-outer:last-child{
+        border-radius: 0px;
+    }
+}
